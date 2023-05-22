@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+}
+
+:root {
+    --poppins-font: 'Poppins', sans-serif;
+    --Open-Sans-font: 'Open Sans', sans-serif;
+    --font: 1.8rem;
+}
+
+main .container header {
+    background-image: url("images/bg-hero-desktop.svg");
+    background-size: cover;
+    background-color: hsl(193, 100%, 96%);
+    padding: 3rem 5rem;
+}
+
+@media (max-width: 50em) {
+    main .container header {
+        background-image: url("images/bg-hero-mobile.svg");
+        padding: 1.5rem;
+    }
+}
+
+main .container header .main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .container header .main-header a {
+    text-decoration: none;
+    padding: 1rem 4rem;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 3vh;
+    color: hsl(192, 100%, 9%);
+    font-size: 1.3rem;
+    font-weight: bold;
+    transition: .5s;
+}
+
+@media (max-width: 50em) {
+    main .container header .main-header a {
+        padding: .5rem 1rem;
+    }
+}
+
+main .container header .main-header img {
+    width: 25rem;
+}
+
+@media (max-width: 50em) {
+    main .container header .main-header img {
+        width: 10rem;
+    }
+}
+
+main .container header .main-header a:hover {
+    color: hsl(208, 11%, 55%);
+}
+
+main .container header .text {
+    display: flex;
+    align-items: center;
+    padding-top: 4rem;
+    justify-content: space-between;
+}
+
+@media (max-width: 71em) {
+    main .container header .text {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 6rem;
+    }
+}
+
+main .container header .text .description h1 {
+    width: 50rem;
+    font-size: 4rem;
+    color: hsl(192, 100%, 9%);
+}
+
+@media (max-width: 71em) {
+    main .container header .text .description h1{
+        width: 25rem;
+        font-size: 2.3rem;
+        margin: auto;
+    }
+}
+
+main .container header .text .description p {
+    font-size: var(--font);
+    width: 51rem;
+    color: hsl(192, 100%, 9%);
+    margin: 2.5rem 0 2.5rem;
+}
+
+@media (max-width: 71em) {
+    main .container header .text .description p {
+        width: 31rem;
+        margin: 3rem auto;
+    }
+}
+
+main .container header .text .description a {
+    display: block;
+    width: fit-content;
+    font-size: var(--font);
+    text-decoration: none;
+    padding: 1rem 6rem;
+    background-color: hsl(322, 100%, 66%);
+    border-radius: 5vh;
+    color: hsl(0, 0%, 100%);
+    font-weight: bold;
+    transition: .5s;
+}
+
+@media (max-width: 71em) {
+    main .container header .text .description a {
+        margin: 3rem auto 4rem;
+    }
+}
+
+main .container header .text .description a:hover {
+    background-color: hsl(322deg 100% 66% / 70%);
+}
+
+main .container header .text img {
+    width: 55rem;
+}
+
+@media (max-width: 50em) {
+    main .container header .text img {
+        width: 33rem;
+    }
+}
+
+main .container section {
+    padding: 10rem;
+    background-color: hsl(0, 0%, 100%);
+    position: relative;
+}
+
+@media (max-width: 50em) {
+    main .container section {
+        padding: 5rem 1rem;
+    }
+}
+
+main .container section .info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: hsl(0, 0%, 100%);
+    padding: 3rem 3rem 3rem 6rem;
+    box-shadow: 0 0 10px hsl(208deg 11% 55% / 20%);
+    margin: 2rem 0;
+    border-radius: 1rem;
+}
+
+@media (max-width: 57em) {
+    main .container section .info {
+        flex-direction: column;
+        text-align: center;
+        padding: 3rem;
+    }
+    main .container section .one {
+        flex-direction: column-reverse;
+    }
+    main .container section .three {
+        flex-direction: column-reverse;
+    }
+}
+
+main .container section .info article h1 {
+    font-size: 3rem;
+    color: hsl(192, 100%, 9%);
+    font-family: var(--poppins-font);
+}
+
+@media (max-width: 57em) {
+    main .container section .info article h1 {
+        font-size: 2.3rem;
+        margin: 5rem auto 2rem;
+    }
+}
+
+main .container section .info article p {
+    font-size: var(--font);
+    max-width: 51rem;
+    color: hsl(208, 11%, 55%);
+}
+
+@media (max-width: 57em) {
+    main .container section .info article p {
+        max-width: 35rem;
+    }
+}
+
+main .container section .info img {
+    width: 40rem;
+}
+
+@media (max-width: 57em) {
+    main .container section .info img {
+        width: 25rem;
+    }
+}
+
+main .container section .start {
+    position: relative;
+    box-shadow: 0 0 10px hsl(208deg 11% 55% / 20%);
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -17rem;
+    padding: 4rem;
+    width: 60%;
+    text-align: center;
+    border-radius: 1rem;
+    background-color: hsl(0, 0%, 100%);
+}
+
+@media (max-width: 50em) {
+    main .container section .start {
+        padding: 3rem 1rem;
+        width: 100%;
+        bottom: -11rem;
+    }
+}
+
+main .container section .start h1 {
+    font-size: 3rem;
+    color: hsl(192, 100%, 9%);
+    font-family: var(--poppins-font);
+    margin-bottom: 3rem;
+}
+
+@media (max-width: 50em) {
+    main .container section .start h1 {
+        font-size: 1.8rem;
+    }
+}
+
+main .container section .start a {
+    display: block;
+    width: fit-content;
+    margin: auto;
+    font-size: var(--font);
+    text-decoration: none;
+    padding: 2rem 6rem;
+    background-color: hsl(322, 100%, 66%);
+    border-radius: 5vh;
+    color: hsl(0, 0%, 100%);
+    font-weight: bold;
+    transition: .5s;
+}
+
+@media (max-width: 50em) {
+    main .container section .start a {
+        padding: 1rem 4rem;
+    }
+}
+
+main .container section .start a:hover {
+    background-color: hsl(322deg 100% 66% / 70%);
+}
+
+main .container footer {
+    background-color:  hsl(192, 100%, 9%);
+    padding: 10rem 4rem 4rem;
+}
+
+main .container footer address {
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+@media (max-width: 50em) {
+    main .container footer address {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+main .container footer address .contact-info .logo {
+    background-color: hsl(0, 0%, 100%);
+    margin-bottom: 4rem;
+    width: 18rem;
+    padding: 1.2rem;
+    border-radius: 4vh;
+}
+
+@media (max-width: 50em) {
+    main .container footer address .contact-info .logo {
+        width: 10rem;
+    }
+}
+
+main .container footer address .contact-info .more-info {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+}
+
+main .container footer address .contact-info .more-info img {
+    margin-right: 2rem;
+}
+
+main .container footer address .contact-info .more-info span {
+    width: 31rem;
+    color: hsl(0, 0%, 79%);
+}
+
+@media (max-width: 50em) {
+    main .container footer address .contact-info .more-info span {
+        width: 23rem;
+    }
+}
+
+main .container footer address .contact-info .more-info a {
+    display: block;
+    margin-bottom: 1rem;
+    color: hsl(0, 0%, 79%);
+    text-decoration: none;
+}
+
+main .container footer address .more-about a {
+    display: block;
+    color: hsl(0, 0%, 79%);
+    text-decoration: none;
+    margin-bottom: 1rem;
+    transition: .5s;
+}
+
+main .container footer address .more-about a:hover {
+    text-decoration: underline;
+}
+
+main .container footer address .icons {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+@media (max-width: 50em) {
+    main .container footer address .icons {
+        align-self: center;
+        margin: 2rem;
+    }
+}
+
+main .container footer address .icons i {
+    color: hsl(0, 0%, 79%);;
+    border: 1px solid hsl(0, 0%, 79%);
+    border-radius: 50%;
+    padding: 1rem;
+    transition: .5s;
+    cursor: pointer;
+}
+
+main .container footer address .icons i:hover {
+    border-color: hsl(322, 100%, 66%);
+    color: hsl(322, 100%, 66%);
+}
+
+main .container footer p {
+    color: hsl(0, 0%, 79%);
+    text-align: right;
+}
+
+@media (max-width: 50em) {
+    main .container footer p  {
+        text-align: center;
+    }
+}
