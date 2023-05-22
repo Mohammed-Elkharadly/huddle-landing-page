@@ -75,7 +75,7 @@ main .container header .text {
     display: flex;
     align-items: center;
     padding-top: 4rem;
-    justify-content: space-between;
+    gap: 4rem;
 }
 
 @media (max-width: 71em) {
@@ -138,7 +138,7 @@ main .container header .text .description a:hover {
 }
 
 main .container header .text img {
-    width: 55rem;
+    width: 70rem;
 }
 
 @media (max-width: 50em) {
